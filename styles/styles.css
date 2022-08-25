@@ -25,9 +25,8 @@ p {
   height: auto;
 }
 
-.nav_menu {
+.top_nav {
   margin: 30px;
-
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -38,6 +37,27 @@ p {
   height: 20px;
   font-weight: 300;
   font-size: 12px;
+}
+
+.top_nav a {
+  color: #181a1d;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+.top_nav a:hover {
+  color: #181a1d;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Add a color to the active/current link */
+.top_nav a.active {
+  /* background: #e3deda; */
+  color: #181a1d;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 header {
@@ -88,15 +108,16 @@ header {
 }
 
 footer {
-  margin-top: 1px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 
   width: 100%;
   min-height: 20px;
-  background-color: #efefed;
+  background: #e3deda;
   color: #181a1d;
+  letter-spacing: 0.7px;
+  color: #fcfeff;
 }
 
 .icons {
